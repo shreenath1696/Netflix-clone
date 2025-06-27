@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: black;
+}
+
+/* Main Section */
+.main {
+    background-image: url(assets/Assets/Images/bg.jpg);
+    height: 70vh;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    z-index: 1;
+}
+
+/* Navbar */
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+}
+
+nav span img {
+    width: 150px;
+    filter: brightness(1.2) saturate(1.4);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 40vh;
+    z-index: 2;
+    line-height: 1.5;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero h4 {
+    font-weight: 100;
+}
+
+.hero .line2 {
+    margin-top: 13px;
+}
+
+/* Buttons */
+.white-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 0.5px solid rgb(86, 77, 77);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.red-btn {
+    background-color: red;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.exception {
+    margin-top: 30px;
+    padding: 20px 25px;
+    font-size: large;
+}
+
+/* Email Input */
+.input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input input {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 0.1px solid rgb(86, 77, 77);
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 25vw;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* Section Styling */
+.first {
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.first > div :first-child {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.first > div :nth-child(2) {
+    font-size: 18px;
+}
+
+.second {
+    height: 80vh;
+}
+
+/* Video & Image Layout */
+.secImg {
+    position: relative;
+    display: inline-block;
+}
+
+.secImg img {
+    width: 30vw;
+    display: block;
+    z-index: 10;
+    position: relative;
+}
+
+.secImg video {
+    position: absolute;
+    top: 14.5%;
+    left: 13.5%;
+    width: 73%;
+    height: 61%;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+/* Separation Line */
+.seperation {
+    height: 7px;
+    background-color: rgb(86, 77, 77);
+}
+
+/* FAQ Section */
+.faq h2 {
+    color: white;
+    text-align: center;
+    padding: 34px;
+    margin: 34px auto;
+    font-size: 48px;
+}
+
+.faqbox {
+    color: white;
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    margin: 12px auto;
+    width: 70vw;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 1s ease-out;
+}
+
+.faqbox:hover {
+    background-color: grey;
+}
+
+/* Footer */
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+footer .questions {
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-item a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
